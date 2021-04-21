@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <!-- Styles  -->
+        <link rel="stylesheet" href="./toDoList.css">
+    </head>
+    <body>
+        <div class="fixed-top row justify-content-around">
+            <p class="col-md-8">ToDo List</p>
+            <input name="list-search" id="listSearch" type="text" placeholder="Search your item here" oninput="listSearch(event)" class="col-md-3" />
+        </div>
+            <div class="container content">
+            <input name="list-item" id="listText" type="text" placeholder="Enter your item here" /><br>
+            
+            <p id="message">Total Count = <span id="count">0</span></p>
+            <center>
+            <button  id="add-item">Add to list</button>
+            <button  id="remove-item">Clear list</button>
+            <button  id="dynamic-item">Add dynamic </button>
+        </center>
+            <ul id="list-items" type=none>
+
+            </ul>
+            </div>
+            <div class="fixed-bottom">
+                <p>Made with<span><img src="https://img.icons8.com/cotton/64/000000/like--v1.png"/ height="40px"></span>by Mayank Jindal</p>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./toDoList.js"></script>
+    </body>
+</html>
